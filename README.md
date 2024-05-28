@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +5,7 @@
     <title>FedXpress</title>
     <style>
         body {
-            background-color: #6a0dad;
+            background-color: #FFFFFF;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -56,9 +55,9 @@
 </head>
 <body>
     <div class="container">
-        <img src="LOGOTIPO.JPG" alt="LOGOTIPO" class="logo">
+        
         <form class="codigo-form">
-            <input type="text" id="codigo" placeholder="Ingrese cOdigo">
+            <input type="text" id="codigo" placeholder="Ingrese codigo">
             <button type="button" onclick="mostrarImagen()">Ingresar código</button>
         </form>
         <div class="mensaje" id="mensaje"></div>
@@ -71,6 +70,7 @@
             if (codigo === "3R0W0FLW0177") {
                 document.getElementById("mensaje").style.display = "none";
                 document.getElementById("imagen").src = "xcccc.png"; // Coloca aquí la ruta de la imagen de entrega
+                document.getElementById("imagen").src = "LOGOTIPO.JPG"; // Coloca aquí la ruta de la imagen de entrega
                 document.getElementById("imagen").style.display = "block";
             } else {
                 document.getElementById("mensaje").innerText = "El código ingresado no es válido. Por favor, inténtelo de nuevo.";
